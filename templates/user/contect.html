@@ -1,0 +1,68 @@
+{% extends 'base.html'%}
+{% block contect %}
+<style>
+    .contact
+    {
+     background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(9,70,121,1) 100%, rgba(0,212,255,1) 100%);
+    border:1px solid black;
+    min-height:700px;
+    }
+
+    .pk
+    {
+    border:1px solid black;
+    border-radius:2px;
+    min-height:450px;
+ background: rgb(215,229,240);
+background: linear-gradient(90deg, rgba(215,229,240,0.4598214285714286) 100%, rgba(95,94,111,0.24693627450980393) 100%);
+}
+#cont
+{
+height:80px;
+}
+</style>
+
+<div class="row contact">
+    <div class="col-sm-12">
+        <h1 style="color:white;font-family:sense;text-align:center;"><b style="color:orange;">Contact</b> With Us</h1>
+        <center><hr style="height:2px;width:100px;text-align:center;background:orange;color:orange;"/><br/>
+        <p style="margin-top:-30px;color:white;font-family:sense;">You may contact us by contact number or filling in this from any time you need professional <br/>support or have any question.</p>
+        </center>
+        <div class="row xyz">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-5 pk"><br/><b style="font-family:sense; font-size:28px;margin-left:10px;margin-top:20px;"><b style="color:orange;">Send Your</b> Message</b>
+            <form class="p-3" method="post">
+                {% csrf_token %}
+                {% if S %}
+                <div class="alert alert-success">your massage is a successfully send..</div>
+                {% endif %}
+                <b style="color:black;font-family:sense;font-size:20px;margin-left:30px;">Your Name :</b>
+                <input type="text" placeholder="Enter the name.." name="name" class="form-control">
+                <b style="color:black;font-family:sense;font-size:20px;margin-left:30px;">Your Email :</b>
+                <input type="email" placeholder="Enter the email.." name="email" class="form-control">
+                <b style="color:black;font-family:sense;font-size:20px;margin-left:30px;">Your Contact :</b>
+                <input type="number" placeholder="Enter the phone number.." name="mobile" class="form-control">
+                <b style="color:black;font-family:sense;font-size:20px;margin-left:30px;">Your Message :</b>
+                <input type="text" placeholder="Enter the phone number.." name="msg" id="cont" class="form-control"><br/>
+                <input type="submit" value="Send Message" style="height:40px;width:150px;background:pink;color:black;font-family:sense;font-size:20px;">
+            </form>
+            </div>
+
+            <div class="col-sm-3 pk"><br/>
+                <H1 style="color:black;margin-left:10px;font-family:sense;margin-top:20px;font-size:30px;"><b style="color:orange;">Contact</b> Info</H1>
+                <h4 style="color:black;margin-left:30px;font-family:sense;font-size:20px;"><i class="fa fa-map-marker fa-spin text-center" style="height:25px;width:25px;border-radius:50%;border:1px solid black;line-height:25px;"></i> Office Address</h4>
+                <p style="color:white;font-family:sense;margin-left:40px;">Plot No-44,Sector 5, <br/>Kerakat Jaunpur Uttar Pradesh 222142</p>
+
+                <h4 style="color:black;margin-left:30px;font-family:sense;font-size:20px;"><i class="fa fa-phone fa-spin text-center" style="height:25px;width:25px;border-radius:50%;border:1px solid black;line-height:25px;"></i> Call-Us</h4>
+                <p style="color:white;font-family:sense;margin-left:40px;">+91-639-353-9704 <br/>+91-892-851-9020</p>
+                <h4 style="color:black;margin-left:30px;font-family:sense;font-size:20px;"><i class="fa fa-envelope fa-spin text-center" style="height:25px;width:25px;border-radius:50%;border:1px solid black;line-height:25px;"></i> Mail-Us</h4>
+                <p style="color:white;font-family:sense;margin-left:40px;">sg731159@gmail.com <br/>jitendrayadav91001@gmail.com</p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block contect %}
+<!--start profile-->
+
+    <div class="row prfile">
+        <div class="col-sm-1 bg-light"></div>
+        <div class="col-sm-3 sg1">
+            {% if data %}
+            {% for x in data %}
+            <center>
+             <div class="box" style="margin-top:60px;color:white;"><img src="/{{x.ppic}}" height="250px" width="250px"></div>
+                <h1 style="color:white;font-family:sense;">{{x.name}}</h1>
+                </center>
+        </div>
+        <div class="col-sm-7 sg1"><br>
+            <h3 style="color:white;font-family:sense;">Hello...I am <b style="color:black;">{{x.name}}</b></h3>
+            <p><i class="text-light">{{x.dec}}</i></p>
+        </div>
+         {% endfor %}
+        {% endif %}
+        <div class="col-sm-1 ssg"></div>
+    </div>
+<!--end profile-->
+<!--start skill-->
+    <div class="row skill">
+    <div class="col-sm-12">
+        <div class="row jittu">
+            <h1 class="text-center" style="font-family:sense;">Programming Skills</h1>
+            <div class="col-sm-12 sneha">
+                {% if s %}
+            {% for x in s %}
+                <ul style="list-style:none;">
+                    <li>{{x.pname}}</li>
+                     {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+<!--end skill-->
+
+{% endblock %}

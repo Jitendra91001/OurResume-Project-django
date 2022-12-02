@@ -1,0 +1,53 @@
+{% extends 'base.html'%}
+
+{% block contect %}
+
+<style>
+        .certificate
+    {
+     background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(9,70,121,1) 100%, rgba(0,212,255,1) 100%);
+    border:1px solid black;
+    min-height:700px;
+    }
+    .pk
+    {
+    border:1px solid black;
+    border-radius:5px;
+    min-height:400px;
+ background: rgb(215,229,240);
+background: linear-gradient(90deg, rgba(215,229,240,0.4598214285714286) 100%, rgba(95,94,111,0.24693627450980393) 100%);
+}
+.gupta
+{
+min-height:600px;
+background:white;
+border-radius:5px;
+}
+</style>
+<div class="row certificate">
+    <div class="col-sm-12">
+        <h1 style="color:white;font-family:sense;text-align:center;"><b style="color:orange;">Certificate</b> Page</h1>
+        <div class="row ">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10 pk">
+                <div class="row gupta">
+                    <div class="col-sm-12 ">
+                        {% if data %}
+                        {% for x in data %}
+                        <h1 style="color:black;text-align:center;font-family:sense;background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(10,127,133,0.3029586834733894) 10%);height:50px;width:50%;">{{x.cname}}</h1>
+                        <div style="height:550px;width:50%;background:red;">
+                            <img src="/{{x.cpic}}" height="550px" width="100%"/>
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}

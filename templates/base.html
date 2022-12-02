@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+ <link href="{% static 'images/logo.png' %}" rel="icon"/>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"/>
+    <link href="{% static 'images/store.png'%}" rel="icon"/>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <style>
+    .header
+    {
+    min-height:50px;
+    }
+    .ic
+    {
+    color:#074d6d;
+    background:#f8f9fa;
+    border:1px solid orange;
+    border-radius:50px;
+    height:30px;
+    width:30px;
+    padding:5px;
+    margin-left:5px;
+    }
+    .ic:hover
+    {
+   background:#074d6d;
+    color:#f8f9fa;
+    transition:all ease .5s;
+    transform:rotate(360deg);
+    transform:scale(1.5);
+    }
+<!--    .menu-->
+<!--    {-->
+<!--    min-height:50px;-->
+<!--    }-->
+<!--    #menu ul li a-->
+<!--    {-->
+<!--    color:white;-->
+<!--    }-->
+<!--    #menu ul li a:hover-->
+<!--    {-->
+<!--    color:yellow;-->
+<!--    transition:all ease 1s;-->
+<!--    }-->
+
+    li
+    {
+    min-height:40px;
+    width:100px;
+    border:1px solid white;
+    float:left;
+    color:white;
+    font-family:sense;
+    margin-left:0px auto;
+    text-align:center;
+    line-height:40px;
+    border-radius:10px;
+    margin-top:10px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(9,70,121,1) 100%, rgba(0,212,255,1) 100%);
+
+    }
+    .category
+    {
+    min-height:200px;
+    }
+    .newblog
+    {
+    min-height:300px;
+    background:#feaa00;
+    }
+    .services
+    {
+    height:300px;
+    }
+    #btn
+    {
+    background:none;
+    }
+    #btn:hover
+    {
+    background:orange;
+    }
+    .ufooter
+    {
+    min-height:340px;
+    background:#feaa00;
+    }
+    .bfooter
+    {
+    min-height:50px;
+    margin-top:5px;
+    background:black;
+    }
+    .offer
+    {
+    min-height:250px;
+    }
+    .font
+    {
+    font-family:cambria;
+    }
+.jitendra:hover
+{
+transform:scale(1.2);
+color:yellow;
+}
+#p
+{
+color:gray;
+}
+ .sg
+    {
+    color:#074d6d;
+    background:#f8f9fa;
+    border:1px solid orange;
+    border-radius:50px;
+    height:30px;
+    width:30px;
+    padding:5px;
+    margin-left:5px;
+    }
+    .sg:hover
+    {
+   background:black;
+    color:#f8f9fa;
+    transition:all ease .5s;
+    transform:rotate(360deg);
+    transform:scale(1.5);
+    }
+    .s2
+    {
+    color:#074d6d;
+
+    }
+    .s2:hover
+    {
+    transform: skewY(10deg);
+    color:red;
+    }
+    .prfile
+    {
+    min-height:440px;
+    background:;
+    }
+      .skill
+    {
+    min-height:350px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(215,229,240,0.4598214285714286) 100%, rgba(0,212,255,1) 100%);
+    }
+    .jittu
+    {
+    min-height:400px;
+    }
+    .menu
+    {
+    min-height:40px;
+
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(215,229,240,0.4598214285714286) 100%, rgba(0,212,255,1) 100%);
+    }
+    .sneha
+    {
+    border:1px solid black;
+    min-height:300px;
+    }
+    .ssg
+    {
+    //border:1px solid black;
+    min-height:30px;
+    margin-top:-25px;
+    }
+    .sg1
+    {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.5494572829131652) 0%, rgba(9,70,121,1) 100%, rgba(0,212,255,1) 100%);
+    border:1px solid black;
+    text-align:center;
+<!--    min-height:300px;-->
+    }
+    .box
+    {
+    height:250px;
+    width:250px;
+    background:black;
+    border-radius:50px;
+    }
+    .ssg ul li
+    {
+    margin-top:10px;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+
+    <!-------start header------>
+
+    <div class="row header bg-light">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-sm-3 fs-3 text-center">
+                    <span class="font py-1"><b>Our<span class="text-primary">Res</span>ume</b>  <i class="fa fa-shopping-cart text-success"></i></span>
+                </div>
+                <div class="col-sm-6 fs-6 py-1 ">
+                    <p class="text-secondary font fs-5 py-1 text-center"><marquee scrollamount="15" behavior="alternate">Welcome To <b style="color:red;">Our Resume</b> <b style="color:black;"></b></marquee></p>
+                </div>
+                <div class="col-sm-3 py-2 fs-5 text-center">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook ic"></i></a>
+                    <a href="https://www.youtube.com/watch?v=QjDO9GWworA"><i class="fa fa-youtube-play ic" style="color:#f70000"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fa fa-twitter-square ic" style="color:#1bb1e4"></i></a>
+                    <a href="https://www.whatsapp.com/" ><i class="fa fa-whatsapp ic" style="color:#37bf59"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram ic" style="color:#d78b3e"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+    <!-------end header------>
+  <div class="row menu">
+      <div class="col-sm-3"></div>
+         <div class="col-sm-6 ssg ">
+             <center>
+                <ul style="list-style:none;">
+                    <li><a href="{% url 'xyz'%}" style="text-decoration:none;color:white;">Home</a></li>
+                    <li><a href="{% url 'rsmdata'%}" style="text-decoration:none;color:white;">Resume</a></li>
+                    <li><a href="{% url 'crftdata'%}" style="text-decoration:none;color:white;">Certificate</a></li>
+                    <li><a href="{% url 'cdata'%}" style="text-decoration:none;color:white;">Contacts</a></li>
+
+                </ul>
+                 </center>
+            </div>
+      <div class="col-sm-3"></div>
+    </div>
+<!-- start content-->
+    <div class="col-sm-12">
+    {% block contect %}
+
+    {% endblock %}
+        </div>
+<!-- end content-->
+  <!-------start ufooter----->
+    <div class="row ufooter">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-dark text-light">
+                <!-- Section: Social media -->
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                    <!-- Left -->
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Get connected with us on social networks:</span>
+                    </div>
+                    <!-- Left -->
+
+                    <!-- Right -->
+                    <div>
+                        <a href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=120&lwc=1348131" class="me-4 text-reset">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="me-4 text-reset">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.google.co.in/" class="me-4 text-reset ">
+                            <i class="fa fa-google"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="me-4 text-reset">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/login" class="me-4 text-reset">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.whatsapp.com/" class="me-4 text-reset jitendra">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <!-- Right -->
+                </section>
+                <!-- Section: Social media -->
+
+                <!-- Section: Links  -->
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <!-- Content -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    <i class="fa fa-gem me-3"></i>OurResume India pvt. ltd.
+                                </h6>
+                                <img src="{% static 'images/resume.png' %}" height="150" style="border-radius:55%;" width="80%">
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Home
+                                </h6>
+                                <p>
+                                    <a href="/user/contactus" class="text-reset">Resume</a>
+                                </p>
+                                <p>
+                                    <a href="/user/certificate" class="text-reset">Certificate</a>
+                                </p>
+                                <p>
+                                    <a href="{% url 'cdata'%}" class="text-reset">Contacts</a>
+                                </p>
+                                <p>
+                                    <a href="/admin/" class="text-reset">Admin</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Contact
+                                </h6>
+                                <p class="fs-6"><i class="fa fa-home me-3 sg "></i> Jaunpur Uttar pradesh 222170 </p>
+                                <p>
+                                    <i class="fa fa-envelope me-3 sg"></i>
+                                    <a href="mailto:ourresume@gmail.com"  class="text-light s2">ourresume@gmail.com</a>
+                                </p>
+                                <p><i class="fa fa-phone me-3  sg"></i> +91-8928519020</p>
+                                <p><i class="fa fa-print me-3 sg"></i> +91-9918078367</p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+            </footer>
+            <!-- Footer -->
+        </div>
+</div>
+</body>
+</html>
